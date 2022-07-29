@@ -1,0 +1,2494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vcganafrom</class>
+ <widget class="QDialog" name="vcganafrom">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1048</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(29, 41, 55);</string>
+  </property>
+  <widget class="QFrame" name="panCenter">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1048</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frmLeftC">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>15</y>
+      <width>323</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(29, 41, 55);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QCustomPlot" name="PBadjust" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>1</y>
+       <width>320</width>
+       <height>450</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+     <widget class="QLabel" name="lblX_2">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>105</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 255);
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>X</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblX_3">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>235</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 255);
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Y</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblX_4">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>365</y>
+        <width>15</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 255);
+background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string>Z</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgQ1">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgQ1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgP2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgP2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgS1">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgS1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgP1">
+      <property name="geometry">
+       <rect>
+        <x>-2</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgP1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgT2">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgT2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imgT1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>-10</y>
+        <width>17</width>
+        <height>1200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="picture/ecg.qrc">:/imgT1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="gbSpeed">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>540</y>
+       <width>310</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GroupBox</string>
+     </property>
+     <widget class="QSlider" name="tbSpeed">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>251</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <number>11</number>
+      </property>
+      <property name="pageStep">
+       <number>11</number>
+      </property>
+      <property name="sliderPosition">
+       <number>8</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLow">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblFast">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>20</y>
+        <width>21</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="gbGain">
+     <property name="geometry">
+      <rect>
+       <x>6</x>
+       <y>620</y>
+       <width>310</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GroupBox</string>
+     </property>
+     <widget class="QComboBox" name="cboPlus">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>10 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>20 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>30 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>40 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>50 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>60 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>70 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>80 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>90 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>100 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>110 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>120 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>130 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>140 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>150 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>160 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>170 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>180 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>190 mm/mv</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>200 mm/mv</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QToolButton" name="spPlay">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>480</y>
+       <width>100</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhLowercaseOnly</set>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/心电_00.bmp</normaloff>:/心电_00.bmp</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spStop">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>480</y>
+       <width>100</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhPreferLowercase</set>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/心电_02.bmp</normaloff>:/心电_02.bmp</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spReDraw">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>480</y>
+       <width>100</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhPreferLowercase</set>
+     </property>
+     <property name="text">
+      <string>edit</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/心电_01.bmp</normaloff>:/心电_01.bmp</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextBesideIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spClose">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>683</y>
+       <width>90</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 177, 228);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/spBackT.png</normaloff>:/spBackT.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frmLeftS">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>15</y>
+      <width>323</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(29, 41, 55);
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QToolButton" name="spPreview">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>655</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 177, 228);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/spPreviewT.png</normaloff>:/spPreviewT.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spPrint">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>655</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 177, 228);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/spPrintT.png</normaloff>:/spPrintT.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="gbDiag">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>440</y>
+       <width>301</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="title">
+      <string>GroupBox</string>
+     </property>
+     <widget class="QComboBox" name="cboWord">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>285</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bitPriorComment">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>176</y>
+        <width>130</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bitSaveComment">
+      <property name="geometry">
+       <rect>
+        <x>166</x>
+        <y>176</y>
+        <width>130</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="reDiag">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>20</y>
+        <width>285</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QTableView" name="lvShow">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>120</y>
+       <width>315</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="AgeSex_label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>80</y>
+       <width>180</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pic_Label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>100</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="name_label">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>150</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spBack">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>720</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 177, 228);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/spBackT.png</normaloff>:/spBackT.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="spLargePrint">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>720</y>
+       <width>120</width>
+       <height>65</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(15, 177, 228);</string>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+     <property name="icon">
+      <iconset resource="picture/ecg.qrc">
+       <normaloff>:/spPrintT.png</normaloff>:/spPrintT.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="PagConSysSet">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>15</y>
+      <width>705</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="TabSheet1">
+     <attribute name="title">
+      <string>TabSheet1</string>
+     </attribute>
+     <widget class="QCustomPlot" name="imgF" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>1</y>
+        <width>350</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblF1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: rgb(0, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>100ms/div  250uv/div</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>300</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>300</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblY_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>330</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblX_5">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>170</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCustomPlot" name="imgS" native="true">
+      <property name="geometry">
+       <rect>
+        <x>352</x>
+        <y>1</y>
+        <width>350</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblS3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>300</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: rgb(0, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>100ms/div  250uv/div</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>300</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblZ_3">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>170</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblY_3">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>330</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCustomPlot" name="imgH" native="true">
+      <property name="geometry">
+       <rect>
+        <x>1</x>
+        <y>352</y>
+        <width>350</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblH3">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>300</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+color: rgb(0, 170, 255);</string>
+       </property>
+       <property name="text">
+        <string>100ms/div  250uv/div</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH4">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>300</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH1">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>40</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH2">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>40</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblZ_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>330</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblX_6">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>170</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QCustomPlot" name="pbShow" native="true">
+      <property name="geometry">
+       <rect>
+        <x>352</x>
+        <y>352</y>
+        <width>350</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblX">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>83</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblY">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>173</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblZ">
+       <property name="geometry">
+        <rect>
+         <x>2</x>
+         <y>257</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+      <widget class="QScrollBar" name="horizontalScrollBar">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>330</y>
+         <width>350</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <zorder>horizontalScrollBar</zorder>
+      <zorder>lblX</zorder>
+      <zorder>lblZ</zorder>
+      <zorder>lblY</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TabSheet2">
+     <attribute name="title">
+      <string>TabSheet2</string>
+     </attribute>
+     <widget class="QCustomPlot" name="imgF_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>700</width>
+        <height>700</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblF_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>640</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF_24">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>640</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF_21">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblF_22">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblX_7">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>340</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblY_4">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>680</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TabSheet3">
+     <attribute name="title">
+      <string>TabSheet3</string>
+     </attribute>
+     <widget class="QCustomPlot" name="imgS_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>700</width>
+        <height>700</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblS_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>640</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS_22">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS_24">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>640</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblS_21">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblZ_4">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>340</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblY_5">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>680</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Y</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="TabSheet4">
+     <attribute name="title">
+      <string>TabSheet4</string>
+     </attribute>
+     <widget class="QCustomPlot" name="imgH_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>2</y>
+        <width>700</width>
+        <height>700</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <widget class="QLabel" name="lblH_23">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>640</y>
+         <width>51</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH_22">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH_24">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>640</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblH_21">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>50</y>
+         <width>50</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblX_8">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>340</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>X</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblZ_5">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>680</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Z</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>PagConSysSet</zorder>
+   <zorder>frmLeftC</zorder>
+   <zorder>frmLeftS</zorder>
+  </widget>
+  <widget class="QFrame" name="panCenterP">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>1080</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1920</width>
+     <height>1080</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);</string>
+   </property>
+   <widget class="QFrame" name="panTopH">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(208, 208, 208);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="bitPrint">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>8</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bitClose">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>8</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="panMoveP" native="true">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>793</width>
+      <height>1122</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QLabel" name="lblBedNo1">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>56</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMedicine">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>40</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHisNo1">
+     <property name="geometry">
+      <rect>
+       <x>426</x>
+       <y>56</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblHisNo">
+     <property name="geometry">
+      <rect>
+       <x>351</x>
+       <y>56</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblNameP">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>40</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAgeP">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="mHospitalName">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>2</y>
+       <width>790</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>28</pointsize>
+      </font>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblBedNo">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>56</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblInHosNo1">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>40</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblAge">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>40</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCardNo1">
+     <property name="geometry">
+      <rect>
+       <x>426</x>
+       <y>40</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSexP">
+     <property name="geometry">
+      <rect>
+       <x>112</x>
+       <y>56</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblName">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>40</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblNo">
+     <property name="geometry">
+      <rect>
+       <x>197</x>
+       <y>56</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblMedicine1">
+     <property name="geometry">
+      <rect>
+       <x>719</x>
+       <y>40</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblNo1">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>56</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCardNo">
+     <property name="geometry">
+      <rect>
+       <x>351</x>
+       <y>40</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblSex">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>56</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDr">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>56</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblDr1">
+     <property name="geometry">
+      <rect>
+       <x>719</x>
+       <y>56</y>
+       <width>60</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblInHosNo">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>40</y>
+       <width>54</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCDate">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>1080</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblScrip">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>1080</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblCDate1">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>1080</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QCustomPlot" name="imgPrintSumF" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>75</y>
+       <width>730</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <widget class="QCustomPlot" name="widget_4" native="true">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>360</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>250</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_6" native="true">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>380</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_7" native="true">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>480</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_9" native="true">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>500</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_1" native="true">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>250</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_8" native="true">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>490</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_5" native="true">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>370</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>250</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QCustomPlot" name="widget_10" native="true">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>640</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine1_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>890</y>
+        <width>729</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine1_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>920</y>
+        <width>729</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine2_1">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>1</y>
+        <width>1</width>
+        <height>999</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine2_2">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>1</y>
+        <width>1</width>
+        <height>999</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine3_1">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>820</y>
+        <width>50</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine3_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>830</y>
+        <width>50</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblLine3_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>850</y>
+        <width>50</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>widget_4</zorder>
+     <zorder>widget_3</zorder>
+     <zorder>widget_6</zorder>
+     <zorder>widget_7</zorder>
+     <zorder>widget_9</zorder>
+     <zorder>widget_1</zorder>
+     <zorder>widget_8</zorder>
+     <zorder>widget_5</zorder>
+     <zorder>widget_2</zorder>
+     <zorder>widget_10</zorder>
+     <zorder>lblLine1_2</zorder>
+     <zorder>lblLine1_1</zorder>
+     <zorder>lblLine2_1</zorder>
+     <zorder>lblLine2_2</zorder>
+     <zorder>lblLine3_1</zorder>
+     <zorder>lblLine3_2</zorder>
+     <zorder>lblLine3_3</zorder>
+    </widget>
+    <widget class="QCustomPlot" name="imgPrintSumF_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>75</y>
+       <width>730</width>
+       <height>1000</height>
+      </rect>
+     </property>
+     <widget class="QCustomPlot" name="widget_11" native="true">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>360</y>
+        <width>120</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:1px solid black;</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>imgPrintSumF</zorder>
+    <zorder>lblBedNo1</zorder>
+    <zorder>lblMedicine</zorder>
+    <zorder>lblHisNo1</zorder>
+    <zorder>lblHisNo</zorder>
+    <zorder>lblNameP</zorder>
+    <zorder>lblAgeP</zorder>
+    <zorder>mHospitalName</zorder>
+    <zorder>lblBedNo</zorder>
+    <zorder>lblInHosNo1</zorder>
+    <zorder>lblAge</zorder>
+    <zorder>lblCardNo1</zorder>
+    <zorder>lblSexP</zorder>
+    <zorder>lblName</zorder>
+    <zorder>lblNo</zorder>
+    <zorder>lblMedicine1</zorder>
+    <zorder>lblNo1</zorder>
+    <zorder>lblCardNo</zorder>
+    <zorder>lblSex</zorder>
+    <zorder>lblDr</zorder>
+    <zorder>lblDr1</zorder>
+    <zorder>lblInHosNo</zorder>
+    <zorder>lblCDate</zorder>
+    <zorder>lblScrip</zorder>
+    <zorder>lblCDate1</zorder>
+    <zorder>imgPrintSumF_2</zorder>
+   </widget>
+  </widget>
+  <zorder>panCenterP</zorder>
+  <zorder>panCenter</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="picture/ecg.qrc"/>
+ </resources>
+ <connections/>
+</ui>
